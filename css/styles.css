@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    border-radius: 10px;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Gives format to rows*/
+
+#header {
+    background-color: white;
+}
+
+#header h1 {
+    color: teal;
+    font-size: 5.5vw;
+    padding-bottom: 4%;
+}
+
+#header h6 {
+    font-size: 2vw;
+}
+
+#section1 {
+    background-color: #f5eef5;
+}
+
+#section2 {
+    background-color: #faf5f3;
+}
+
+#section3 {
+    background-color: #f2f9f8;
+}
+
+#section1 h2,
+#section2 h2,
+#section3 h2 {
+    color: grey;
+    font-size: 4.6vw;
+}
+
+#section1 p,
+#section2 p,
+#section3 p {
+    font-size: 1.5vw;
+}
+
+#section1 h4,
+#section2 h4,
+#section3 h4 {
+    font-size: 3vw;
+}
+
+#section4 {
+    background-color: #000000;
+    color: white;
+    padding-bottom: 3%;
+}
+
+#section4 .column4 {
+    padding-top: 5%;
+}
+
+.column1 {
+    float: left;
+    width: 100%;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+}
+
+.column4 {
+    float: left;
+    width: 25%;
+}
+
+.padding-left {
+    padding-left: 8vw;
+    padding-top: 6vw;
+    padding-right: 2vw;
+    padding-bottom: 6vw;
+}
+
+.padding-right {
+    padding-left: 8vw;
+    padding-top: 6vw;
+    padding-right: 2vw;
+    padding-bottom: 6vw;
+}
+
+@media screen and (max-width:700px) {
+    .column2 {
+        width: 100%;
+    }
+    .column4 {
+        width: 50%;
+    }
+    #header h1 {
+        font-size: 13vw;
+        padding-bottom: 1%;
+    }
+    #header h6 {
+        font-size: 5vw;
+    }
+    #section1 h2,
+    #section2 h2,
+    #section3 h2 {
+        font-size: 6vw;
+    }
+    #section1 p,
+    #section2 p,
+    #section3 p {
+        font-size: 2.5vw;
+    }
+    #section1 h4,
+    #section2 h4,
+    #section3 h4 {
+        font-size: 5vw;
+    }
+    .padding-left {
+        padding-left: 4vw;
+        padding-top: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 4vw;
+    }
+    .padding-right {
+        padding-left: 4vw;
+        padding-top: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 4vw;
+    }
+    img {
+        width: 100%;
+    }
+    #section4 {
+        padding-bottom: 4%;
+    }
+    #section4 .column4 {
+        padding-top: 4%;
+    }
+    .flex {
+        display: table;
+    }
+}
